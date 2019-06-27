@@ -1,0 +1,105 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 100px; }
+
+.form {
+  margin-bottom: 10px; }
+  .form__title {
+    margin-bottom: 25px;
+    color: orange; }
+  .form__wrapper {
+    margin-top: 30px;
+    text-align: center; }
+  .form--inline {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .form .button {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 10px;
+    border-radius: 4px;
+    background: orange;
+    color: #fff;
+    border: 1px solid orange; }
+  .form .input {
+    outline: none;
+    border: 1px solid orange;
+    padding: 10px;
+    border-radius: 4px; }
+    .form .input--between {
+      border-radius: 0;
+      border-left: none;
+      border-right: none; }
+    .form .input--short {
+      max-width: 30px; }
+    .form .input--left {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0; }
+    .form .input--right {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0; }
+  .form .label {
+    text-align: left;
+    display: block;
+    font-size: 0.85em;
+    margin-bottom: 2px;
+    color: orange; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.books {
+  margin: 40px 0; }
+  .books .loading,
+  .books .information {
+    margin-top: 10px;
+    text-align: center; }
+
+.error {
+  color: red; }
+
+.list {
+  list-style-type: none; }
+  .list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 15px 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .list__item:hover {
+      background: orange;
+      color: #fff; }
+  .list__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .list__image {
+    display: block;
+    width: 90px; }
+  .list__description {
+    padding: 10px 15px; }
+  .list__title {
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-bottom: 6px; }
+
+/*# sourceMappingURL=main.css.map */

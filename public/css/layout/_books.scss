@@ -1,0 +1,42 @@
+.books {
+  margin: 40px 0;
+  .loading,
+  .information {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+.error {
+  color: red;
+}
+
+.list {
+  list-style-type: none;
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 0;
+    flex: 1;
+    &:hover {
+      background: orange;
+      color: #fff;
+    }
+  }
+  &__flex {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__image {
+    display: block;
+    width: 90px;
+  }
+  &__description {
+    padding: 10px 15px;
+  }
+  &__title {
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-bottom: 6px;
+  }
+}
