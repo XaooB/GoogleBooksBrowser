@@ -1,4 +1,7 @@
 .form {
+  > div {
+    margin-bottom: 10px;
+  }
   margin-bottom: 10px;
   &__title {
     margin-bottom: 25px;
@@ -10,29 +13,24 @@
   }
   &--inline {
     display: inline-flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: flex-start;
   }
   .button {
     align-self: flex-end;
     padding: 10px;
-    border-radius: 4px;
+    margin-top: 10px;
     background: orange;
     color: #fff;
+    width: 100%;
     border: 1px solid orange;
   }
   .input {
     outline: none;
     border: 1px solid orange;
     padding: 10px;
-    border-radius: 4px;
-    &--between {
-      border-radius: 0;
-      border-left: none;
-      border-right: none;
-    }
     &--short {
-      max-width: 30px;
+      max-width: initial;
     }
     &--left {
       border-bottom-right-radius: 0;

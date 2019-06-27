@@ -6,6 +6,8 @@
 
 .form {
   margin-bottom: 10px; }
+  .form > div {
+    margin-bottom: 10px; }
   .form__title {
     margin-bottom: 25px;
     color: orange; }
@@ -16,10 +18,10 @@
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
@@ -27,21 +29,17 @@
     -ms-flex-item-align: end;
         align-self: flex-end;
     padding: 10px;
-    border-radius: 4px;
+    margin-top: 10px;
     background: orange;
     color: #fff;
+    width: 100%;
     border: 1px solid orange; }
   .form .input {
     outline: none;
     border: 1px solid orange;
-    padding: 10px;
-    border-radius: 4px; }
-    .form .input--between {
-      border-radius: 0;
-      border-left: none;
-      border-right: none; }
+    padding: 10px; }
     .form .input--short {
-      max-width: 30px; }
+      max-width: initial; }
     .form .input--left {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
@@ -58,6 +56,24 @@
 * {
   margin: 0;
   padding: 0; }
+
+@media (min-width: 640px) {
+  .form > div {
+    margin-bottom: 0; }
+  .form--inline {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+  .form .input--between {
+    border-radius: 0;
+    border-left: none;
+    border-right: none; }
+  .form .input--short {
+    max-width: 30px; }
+  .form .button {
+    margin-top: 0;
+    width: auto; } }
 
 .books {
   margin: 40px 0; }
