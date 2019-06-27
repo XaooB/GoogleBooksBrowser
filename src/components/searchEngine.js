@@ -55,7 +55,7 @@ class Search extends Component {
     if (lang.length > 0) tmpLang = `langRestrict=${lang}`;
     if (author.length > 0) tmpAuthor = `+inauthor:${author}`;
 
-    return tmpLang + tmpTitle + tmpAuthor;
+    return tmpLang + "&q=" + tmpTitle + tmpAuthor;
   }
 
   render() {
